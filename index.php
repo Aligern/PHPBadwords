@@ -23,7 +23,7 @@ $parola = '';
             Inserisci una frase
         </label>
         <input type="textarea" name="frase" placeholder="Inserisci qui la tua frase">
-
+    <!-- here the user will define the word we need to censure -->
         <label for="parola">
             Inserisci una parola
         </label>
