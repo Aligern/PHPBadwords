@@ -3,13 +3,15 @@
 echo "<pre>";
 var_dump($_POST);
 echo "</pre>";
+
 // the data we get from the form
 $frase = $_POST['frase'];
 $parola = $_POST['parola'];
+
 // here we censure the word
 $censura = str_replace($parola, '***', $frase);
 
-
+// here we get the length of the data
 strlen($frase);
 strlen($censura);
 ?>
