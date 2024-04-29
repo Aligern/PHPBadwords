@@ -9,6 +9,8 @@ $parola = $_POST['parola'];
 // here we censure the word
 $censura = str_replace($parola, '***', $frase);
 
+
+strlen($frase);
 strlen($censura);
 ?>
 
@@ -24,15 +26,18 @@ strlen($censura);
     <!-- here we print the data -->
     <p>
         <?php echo $frase ?>
+        <br>
+        lunghezza della frase:
+        <?php echo strlen($frase) ?>
     </p>
     <!-- here we print the data with the censure -->
     <p>
         <?php echo $censura ?>
-    </p>
-    <!-- here we print the length of the censure -->
-    <p>
-        lunghezza di censura:
+        <br>
+        <!-- here we print the length of the censure -->
+        lunghezza della frase censurata:
         <?php echo strlen($censura) ?>
     </p>
+    
 </body>
 </html>
